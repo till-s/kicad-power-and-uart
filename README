@@ -1,0 +1,5 @@
+Fork of power-test-1 with reference numbers starting at 1000.
+Helps importing into other projects.
+
+Note: re-annotating schematic from kicad and re-importing into pcbnew
+works!!! So it is easy to change the base to something else...
