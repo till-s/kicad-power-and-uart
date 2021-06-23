@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name trigbox)(type Legacy)(uri /home/till/kicad/trigbox/trigbox.lib)(options "")(descr ""))
+  (lib (name trigbox)(type Legacy)(uri /home/till/kicad/libs/trigbox.lib)(options "")(descr ""))
   (lib (name power-test-module-rescue)(type Legacy)(uri ${KIPRJMOD}/power-test-module-rescue.lib)(options "")(descr ""))
 )
