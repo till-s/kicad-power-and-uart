@@ -359,22 +359,6 @@ Connection ~ 8100 1000
 Wire Wire Line
 	8100 1000 8300 1000
 $Comp
-L power-test-module-rescue:SC185-trigbox U?
-U 1 1 5C3CF031
-P 6250 2100
-AR Path="/5C3C60AE/5C3CF031" Ref="U?"  Part="1" 
-AR Path="/5C3CF031" Ref="U5"  Part="1" 
-AR Path="/5C4CE703/5C3CF031" Ref="U5"  Part="1" 
-F 0 "U5" H 6250 3010 50  0000 C CNN
-F 1 "SC185" H 6250 2919 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" H 6150 2000 50  0001 C CNN
-F 3 "" H 6250 2100 50  0001 C CNN
-F 4 "SC185QULTRT (3.3V)" H 6250 2828 50  0000 C CNN "Part"
-F 5 "Semtech" H 6250 2737 50  0000 C CNN "Manufacturer"
-	1    6250 2100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:L_Core_Ferrite L?
 U 1 1 5C3CF03A
 P 6800 1000
@@ -391,7 +375,7 @@ F 5 "FDV0530S-1R0" V 6800 1000 50  0001 C CNN "Model"
 	0    1    1    0   
 $EndComp
 $Comp
-L power-test-module-rescue:22uF_lo_ESR-trigbox C?
+L trigbox:22uF_lo_ESR C?
 U 1 1 5C3CF043
 P 5050 2100
 AR Path="/5C3C60AE/5C3CF043" Ref="C?"  Part="1" 
@@ -447,7 +431,6 @@ Wire Wire Line
 	5300 2050 5300 2400
 Wire Wire Line
 	5700 1950 5700 2050
-Connection ~ 5700 2050
 Wire Wire Line
 	5050 1950 5300 1950
 Wire Wire Line
@@ -470,8 +453,6 @@ $EndComp
 Wire Wire Line
 	5700 2700 5600 2700
 Connection ~ 5600 2700
-Wire Wire Line
-	5700 2150 5700 2700
 $Comp
 L power:GND #PWR?
 U 1 1 5C3CF06D
@@ -533,27 +514,14 @@ F 3 "" H 7050 2550 50  0001 C CNN
 	1    7050 2550
 	1    0    0    -1  
 $EndComp
-Connection ~ 6800 2450
-Wire Wire Line
-	6800 1950 6800 2050
-Connection ~ 6800 2050
 Wire Wire Line
 	6400 1550 6800 1550
-Wire Wire Line
-	6800 1550 6800 1950
-Connection ~ 6800 1950
-Wire Wire Line
-	6300 1550 6200 1550
-Wire Wire Line
-	6200 1550 6100 1550
-Connection ~ 6200 1550
 Wire Wire Line
 	6100 1550 6100 1000
 Wire Wire Line
 	6100 1000 6650 1000
-Connection ~ 6100 1550
 $Comp
-L power-test-module-rescue:22uF_lo_ESR-trigbox C?
+L trigbox:22uF_lo_ESR C?
 U 1 1 5C3CF098
 P 6950 1150
 AR Path="/5C3C60AE/5C3CF098" Ref="C?"  Part="1" 
@@ -569,7 +537,7 @@ F 5 "C4532X7R1E226M250KC" H -150 -2100 50  0001 C CNN "Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-module-rescue:22uF_lo_ESR-trigbox C?
+L trigbox:22uF_lo_ESR C?
 U 1 1 5C3CF0A1
 P 7200 1150
 AR Path="/5C3C60AE/5C3CF0A1" Ref="C?"  Part="1" 
@@ -622,8 +590,6 @@ Wire Wire Line
 Connection ~ 7100 1000
 Wire Wire Line
 	7100 1000 6950 1000
-Wire Wire Line
-	6800 2050 6800 2450
 Connection ~ 7200 1000
 $Comp
 L power:+5V #PWR?
@@ -1431,4 +1397,38 @@ F 3 "" H 8300 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7200 1000 8100 1000
+Wire Wire Line
+	5700 2150 5700 2700
+Connection ~ 5700 2050
+Connection ~ 6800 2450
+Connection ~ 6100 1550
+Wire Wire Line
+	6200 1550 6100 1550
+Wire Wire Line
+	6300 1550 6200 1550
+Connection ~ 6200 1550
+Wire Wire Line
+	6800 1550 6800 1950
+Connection ~ 6800 1950
+Wire Wire Line
+	6800 2050 6800 2450
+Wire Wire Line
+	6800 1950 6800 2050
+Connection ~ 6800 2050
+$Comp
+L trigbox:SC185 U?
+U 1 1 5C3CF031
+P 6250 2100
+AR Path="/5C3C60AE/5C3CF031" Ref="U?"  Part="1" 
+AR Path="/5C3CF031" Ref="U5"  Part="1" 
+AR Path="/5C4CE703/5C3CF031" Ref="U5"  Part="1" 
+F 0 "U5" H 6250 3010 50  0000 C CNN
+F 1 "SC185" H 6250 2919 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" H 6150 2000 50  0001 C CNN
+F 3 "" H 6250 2100 50  0001 C CNN
+F 4 "SC185QULTRT (3.3V)" H 6250 2828 50  0000 C CNN "Part"
+F 5 "Semtech" H 6250 2737 50  0000 C CNN "Manufacturer"
+	1    6250 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
