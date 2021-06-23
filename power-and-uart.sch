@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power-test-1-cache
+LIBS:power-test-module-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -141,7 +141,7 @@ $EndComp
 Wire Wire Line
 	4100 7500 4300 7500
 $Comp
-L power-test-1-rescue:R10k-trigbox R8
+L power-test-module-rescue:R10k-trigbox R8
 U 1 1 5C383AE5
 P 4300 7400
 F 0 "R8" H 4359 7430 50  0000 L CNN
@@ -155,7 +155,7 @@ Connection ~ 4300 7500
 Wire Wire Line
 	4300 7500 4600 7500
 $Comp
-L power-test-1-rescue:R4k7-trigbox R7
+L power-test-module-rescue:R4k7-trigbox R7
 U 1 1 5C383AEE
 P 4300 6700
 F 0 "R7" H 4359 6730 50  0000 L CNN
@@ -289,7 +289,7 @@ $EndComp
 Wire Wire Line
 	3900 5950 3550 5950
 $Comp
-L power-test-1-rescue:R100k-trigbox R1
+L power-test-module-rescue:R100k-trigbox R1
 U 1 1 5C383B4A
 P 3300 6700
 F 0 "R1" H 3241 6670 50  0000 R CNN
@@ -300,7 +300,7 @@ F 3 "~" H 3300 6700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power-test-1-rescue:R100k-trigbox R2
+L power-test-module-rescue:R100k-trigbox R2
 U 1 1 5C383B51
 P 3300 6900
 F 0 "R2" H 3241 6870 50  0000 R CNN
@@ -343,7 +343,7 @@ Connection ~ 3000 5950
 Wire Wire Line
 	3000 5950 3050 5950
 $Comp
-L power-test-1-rescue:VIN-trigbox #PWR?
+L power-test-module-rescue:VIN-trigbox #PWR?
 U 1 1 5C3CF01A
 P 7900 1000
 AR Path="/5C3C60AE/5C3CF01A" Ref="#PWR?"  Part="1" 
@@ -357,7 +357,7 @@ F 3 "" H 7900 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:VIN_3V3-trigbox #PWR?
+L power-test-module-rescue:VIN_3V3-trigbox #PWR?
 U 1 1 5C3CF020
 P 8300 1000
 AR Path="/5C3C60AE/5C3CF020" Ref="#PWR?"  Part="1" 
@@ -390,7 +390,7 @@ Connection ~ 8100 1000
 Wire Wire Line
 	8100 1000 8300 1000
 $Comp
-L power-test-1-rescue:SC185-trigbox U?
+L power-test-module-rescue:SC185-trigbox U?
 U 1 1 5C3CF031
 P 6250 2100
 AR Path="/5C3C60AE/5C3CF031" Ref="U?"  Part="1" 
@@ -422,7 +422,7 @@ F 5 "FDV0530S-1R0" V 6800 1000 50  0001 C CNN "Model"
 	0    1    1    0   
 $EndComp
 $Comp
-L power-test-1-rescue:22uF_lo_ESR-trigbox C?
+L power-test-module-rescue:22uF_lo_ESR-trigbox C?
 U 1 1 5C3CF043
 P 5050 2100
 AR Path="/5C3C60AE/5C3CF043" Ref="C?"  Part="1" 
@@ -584,7 +584,7 @@ Wire Wire Line
 	6100 1000 6650 1000
 Connection ~ 6100 1550
 $Comp
-L power-test-1-rescue:22uF_lo_ESR-trigbox C?
+L power-test-module-rescue:22uF_lo_ESR-trigbox C?
 U 1 1 5C3CF098
 P 6950 1150
 AR Path="/5C3C60AE/5C3CF098" Ref="C?"  Part="1" 
@@ -600,7 +600,7 @@ F 5 "C4532X7R1E226M250KC" H -150 -2100 50  0001 C CNN "Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:22uF_lo_ESR-trigbox C?
+L power-test-module-rescue:22uF_lo_ESR-trigbox C?
 U 1 1 5C3CF0A1
 P 7200 1150
 AR Path="/5C3C60AE/5C3CF0A1" Ref="C?"  Part="1" 
@@ -783,7 +783,7 @@ F 3 "" H 4700 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:R10k-trigbox R?
+L power-test-module-rescue:R10k-trigbox R?
 U 1 1 5C3CF0FC
 P 4200 3300
 AR Path="/5C3C60AE/5C3CF0FC" Ref="R?"  Part="1" 
@@ -797,7 +797,7 @@ F 3 "~" H 4200 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:R10k-trigbox R?
+L power-test-module-rescue:R10k-trigbox R?
 U 1 1 5C3CF103
 P 4100 3300
 AR Path="/5C3C60AE/5C3CF103" Ref="R?"  Part="1" 
@@ -872,7 +872,7 @@ F 3 "" H 3800 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:R10k-trigbox R?
+L power-test-module-rescue:R10k-trigbox R?
 U 1 1 5C3CF124
 P 3450 3500
 AR Path="/5C3C60AE/5C3CF124" Ref="R?"  Part="1" 
@@ -886,7 +886,7 @@ F 3 "~" H 3450 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:R10k-trigbox R?
+L power-test-module-rescue:R10k-trigbox R?
 U 1 1 5C3CF12B
 P 3550 3500
 AR Path="/5C3C60AE/5C3CF12B" Ref="R?"  Part="1" 
@@ -1048,7 +1048,7 @@ $EndComp
 Wire Wire Line
 	4100 4600 4100 4750
 $Comp
-L power-test-1-rescue:R100k-trigbox R?
+L power-test-module-rescue:R100k-trigbox R?
 U 1 1 5C3CF184
 P 5550 3750
 AR Path="/5C3C60AE/5C3CF184" Ref="R?"  Part="1" 
@@ -1195,7 +1195,7 @@ $EndComp
 Text Notes 6200 750  0    50   ~ 0
 Alt: CDMC6D28NP-1RØMC
 $Comp
-L power-test-1-rescue:R100k-trigbox R?
+L power-test-module-rescue:R100k-trigbox R?
 U 1 1 5C3EC942
 P 5800 3750
 AR Path="/5C3C60AE/5C3EC942" Ref="R?"  Part="1" 
@@ -1255,7 +1255,7 @@ Connection ~ 5350 4800
 Wire Wire Line
 	5350 4800 4000 4800
 $Comp
-L power-test-1-rescue:R100k-trigbox R?
+L power-test-module-rescue:R100k-trigbox R?
 U 1 1 5C417A62
 P 5000 4300
 AR Path="/5C3C60AE/5C417A62" Ref="R?"  Part="1" 
@@ -1269,7 +1269,7 @@ F 3 "~" H 5000 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:R100k-trigbox R?
+L power-test-module-rescue:R100k-trigbox R?
 U 1 1 5C417B66
 P 5350 4300
 AR Path="/5C3C60AE/5C417B66" Ref="R?"  Part="1" 
@@ -1283,7 +1283,7 @@ F 3 "~" H 5350 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:R100k-trigbox R?
+L power-test-module-rescue:R100k-trigbox R?
 U 1 1 5C417BFB
 P 6850 3400
 AR Path="/5C3C60AE/5C417BFB" Ref="R?"  Part="1" 

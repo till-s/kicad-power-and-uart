@@ -445,11 +445,11 @@ X 1.5A# 9 550 -150 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# power-test-1-rescue_22uF_lo_ESR-trigbox
+# power-test-module-rescue_22uF_lo_ESR-trigbox
 #
-DEF power-test-1-rescue_22uF_lo_ESR-trigbox C 0 10 N Y 1 F N
+DEF power-test-module-rescue_22uF_lo_ESR-trigbox C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "power-test-1-rescue_22uF_lo_ESR-trigbox" 25 -100 50 H V L CNN
+F1 "power-test-module-rescue_22uF_lo_ESR-trigbox" 25 -100 50 H V L CNN
 F2 "Capacitor_SMD:C_1812_4532Metric" 38 -150 50 H I C CNN
 F3 "https://product.tdk.com/info/en/documents/chara_sheet/C4532X7R1E226M250KC.pdf" 25 100 50 H I C CNN
 F4 "C4532X7R1E226M250KC" 225 300 50 H I C CNN "Part"
@@ -465,11 +465,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power-test-1-rescue_R100k-trigbox
+# power-test-module-rescue_R100k-trigbox
 #
-DEF power-test-1-rescue_R100k-trigbox R 0 10 N N 1 F N
+DEF power-test-module-rescue_R100k-trigbox R 0 10 N N 1 F N
 F0 "R" 50 100 50 H V L CNN
-F1 "power-test-1-rescue_R100k-trigbox" 0 0 30 V V C CNN
+F1 "power-test-module-rescue_R100k-trigbox" 0 0 30 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -482,11 +482,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power-test-1-rescue_R10k-trigbox
+# power-test-module-rescue_R10k-trigbox
 #
-DEF power-test-1-rescue_R10k-trigbox R 0 10 N N 1 F N
+DEF power-test-module-rescue_R10k-trigbox R 0 10 N N 1 F N
 F0 "R" 50 100 50 H V L CNN
-F1 "power-test-1-rescue_R10k-trigbox" 0 -50 30 V V L CNN
+F1 "power-test-module-rescue_R10k-trigbox" 0 -50 30 V V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -499,11 +499,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power-test-1-rescue_R4k7-trigbox
+# power-test-module-rescue_R4k7-trigbox
 #
-DEF power-test-1-rescue_R4k7-trigbox R 0 10 N N 1 F N
+DEF power-test-module-rescue_R4k7-trigbox R 0 10 N N 1 F N
 F0 "R" 50 100 50 H V L CNN
-F1 "power-test-1-rescue_R4k7-trigbox" 0 -50 30 V V L CNN
+F1 "power-test-module-rescue_R4k7-trigbox" 0 -50 30 V V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -516,11 +516,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power-test-1-rescue_SC185-trigbox
+# power-test-module-rescue_SC185-trigbox
 #
-DEF power-test-1-rescue_SC185-trigbox U 0 40 Y Y 1 F N
+DEF power-test-module-rescue_SC185-trigbox U 0 40 Y Y 1 F N
 F0 "U" 0 0 50 H V C CNN
-F1 "power-test-1-rescue_SC185-trigbox" 0 0 50 H V C CNN
+F1 "power-test-module-rescue_SC185-trigbox" 0 0 50 H V C CNN
 F2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" -100 -100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "SC185" 0 100 50 H V C CNN "Part"
@@ -547,11 +547,11 @@ X SS 9 550 -150 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# power-test-1-rescue_VIN-trigbox
+# power-test-module-rescue_VIN-trigbox
 #
-DEF power-test-1-rescue_VIN-trigbox #PWR 0 0 Y Y 1 F P
+DEF power-test-module-rescue_VIN-trigbox #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power-test-1-rescue_VIN-trigbox" 0 140 50 H V C CNN
+F1 "power-test-module-rescue_VIN-trigbox" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -562,11 +562,11 @@ X VIN 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power-test-1-rescue_VIN_3V3-trigbox
+# power-test-module-rescue_VIN_3V3-trigbox
 #
-DEF power-test-1-rescue_VIN_3V3-trigbox #PWR 0 0 Y Y 1 F P
+DEF power-test-module-rescue_VIN_3V3-trigbox #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power-test-1-rescue_VIN_3V3-trigbox" 0 140 50 H V C CNN
+F1 "power-test-module-rescue_VIN_3V3-trigbox" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

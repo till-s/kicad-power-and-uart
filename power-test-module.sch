@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:power-test-1-cache
+LIBS:power-test-module-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -98,7 +98,7 @@ F 3 "~" H 7050 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-1-rescue:VIN_3V3-trigbox #PWR?
+L power-test-module-rescue:VIN_3V3-trigbox #PWR?
 U 1 1 5C4DEC08
 P 4950 4750
 AR Path="/5C3C60AE/5C4DEC08" Ref="#PWR?"  Part="1" 
