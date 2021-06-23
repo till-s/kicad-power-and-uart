@@ -118,10 +118,10 @@ F 3 "" H 4950 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J3
+L Connector_Generic:Conn_02x06_Odd_Even J1001
 U 1 1 60D32371
 P 2350 3600
-F 0 "J3" H 2400 4017 50  0000 C CNN
+F 0 "J1001" H 2400 4017 50  0000 C CNN
 F 1 "Conn_02x06_Odd_Even" H 3150 3600 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2350 3600 50  0001 C CNN
 F 3 "~" H 2350 3600 50  0001 C CNN
