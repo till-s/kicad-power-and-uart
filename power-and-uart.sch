@@ -187,10 +187,6 @@ NoConn ~ 6200 6400
 NoConn ~ 6200 6600
 NoConn ~ 6200 6700
 NoConn ~ 6200 6800
-Text GLabel 1250 7400 0    50   BiDi ~ 0
-USB_C_D_P
-Text GLabel 1250 7600 0    50   BiDi ~ 0
-USB_C_D_N
 $Comp
 L Interface_USB:USB3740B-AI9 U1001
 U 1 1 5C383B09
@@ -1016,10 +1012,6 @@ $EndComp
 Connection ~ 6350 3500
 Wire Wire Line
 	2700 2200 2700 2250
-Text GLabel 2150 5000 0    50   BiDi ~ 0
-USB_C_D_P
-Text GLabel 2150 5250 0    50   BiDi ~ 0
-USB_C_D_N
 Wire Wire Line
 	2700 2250 2750 2250
 Wire Wire Line
@@ -1374,10 +1366,6 @@ F 3 "" H 4650 5100 50  0001 C CNN
 	1    4650 5100
 	1    0    0    -1  
 $EndComp
-Text GLabel 6550 6100 2    50   Output ~ 0
-UART_RX_MIO14
-Text GLabel 6550 6200 2    50   Input ~ 0
-UART_TX_MIO15
 Wire Wire Line
 	6200 6100 6550 6100
 Wire Wire Line
@@ -1431,4 +1419,16 @@ F 5 "Semtech" H 6250 2737 50  0000 C CNN "Manufacturer"
 	1    6250 2100
 	1    0    0    -1  
 $EndComp
+Text Label 2150 5000 0    50   ~ 0
+USB_C_D_P
+Text Label 1250 7400 2    50   ~ 0
+USB_C_D_P
+Text Label 1250 7600 2    50   ~ 0
+USB_C_D_N
+Text Label 2150 5250 0    50   ~ 0
+USB_C_D_N
+Text HLabel 6550 6100 2    50   Output ~ 0
+UART_TX_OUT
+Text HLabel 6550 6200 2    50   Input ~ 0
+UART_RX_IN
 $EndSCHEMATC

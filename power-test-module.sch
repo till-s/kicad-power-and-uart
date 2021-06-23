@@ -18,6 +18,8 @@ S 4100 1350 1350 1050
 U 5C4CE703
 F0 "Sheet5C4CE702" 50
 F1 "power-and-uart.sch" 50
+F2 "UART_TX_OUT" O R 5450 1900 50 
+F3 "UART_RX_IN" I L 4100 1900 50 
 $EndSheet
 Wire Wire Line
 	2150 3600 1800 3600
@@ -222,4 +224,12 @@ Wire Wire Line
 Connection ~ 2100 3900
 Wire Wire Line
 	2100 3900 2100 4150
+Text GLabel 5750 1900 2    50   Output ~ 0
+UART_RX_MIO14
+Text GLabel 3700 1900 0    50   Input ~ 0
+UART_TX_MIO15
+Wire Wire Line
+	3700 1900 4100 1900
+Wire Wire Line
+	5450 1900 5750 1900
 $EndSCHEMATC
