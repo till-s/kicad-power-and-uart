@@ -97,20 +97,6 @@ F 3 "~" H 7050 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-test-module-rescue:VIN_3V3-trigbox #PWR?
-U 1 1 5C4DEC08
-P 4950 4750
-AR Path="/5C3C60AE/5C4DEC08" Ref="#PWR?"  Part="1" 
-AR Path="/5C4DEC08" Ref="#PWR?"  Part="1" 
-AR Path="/5C4CE703/5C4DEC08" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4950 4600 50  0001 C CNN
-F 1 "VIN_3V3" H 4965 4923 50  0000 C CNN
-F 2 "" H 4950 4750 50  0001 C CNN
-F 3 "" H 4950 4750 50  0001 C CNN
-	1    4950 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 5C4DEC0E
 P 4300 5050
@@ -230,4 +216,15 @@ Text GLabel 3400 4600 0    50   Input ~ 0
 UART_RX_MIO14
 Text GLabel 3400 4700 0    50   Output ~ 0
 UART_TX_MIO15
+$Comp
+L trigbox:VIN_3V3 #PWR?
+U 1 1 60D303FF
+P 4950 4750
+F 0 "#PWR?" H 4950 4600 50  0001 C CNN
+F 1 "VIN_3V3" H 4965 4923 50  0000 C CNN
+F 2 "" H 4950 4750 50  0001 C CNN
+F 3 "" H 4950 4750 50  0001 C CNN
+	1    4950 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
