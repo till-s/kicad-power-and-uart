@@ -355,20 +355,6 @@ F 3 "" H 7900 1000 50  0001 C CNN
 	1    7900 1000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power-test-module-rescue:VIN_3V3-trigbox #PWR?
-U 1 1 5C3CF020
-P 8300 1000
-AR Path="/5C3C60AE/5C3CF020" Ref="#PWR?"  Part="1" 
-AR Path="/5C3CF020" Ref="#PWR?"  Part="1" 
-AR Path="/5C4CE703/5C3CF020" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8300 850 50  0001 C CNN
-F 1 "VIN_3V3" H 8315 1173 50  0000 C CNN
-F 2 "" H 8300 1000 50  0001 C CNN
-F 3 "" H 8300 1000 50  0001 C CNN
-	1    8300 1000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7900 1000 8100 1000
 $Comp
@@ -1451,4 +1437,17 @@ Wire Wire Line
 	6200 6200 6550 6200
 Text Notes 6400 5200 0    50   ~ 0
 Upgrades:\n- use LVC1G10 (3 input nand) and evaluate\n  LEG# with additional input/jumper\n- add USB mux option (e.g. TS3USB221)
+$Comp
+L trigbox:VIN_3V3 #PWR?
+U 1 1 60D36F58
+P 8300 1000
+AR Path="/60D36F58" Ref="#PWR?"  Part="1" 
+AR Path="/5C4CE703/60D36F58" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8300 850 50  0001 C CNN
+F 1 "VIN_3V3" H 8315 1173 50  0000 C CNN
+F 2 "" H 8300 1000 50  0001 C CNN
+F 3 "" H 8300 1000 50  0001 C CNN
+	1    8300 1000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
