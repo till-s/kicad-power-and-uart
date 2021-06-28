@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -37,6 +37,7 @@ AR Path="/5BE73D36/60D34AD1" Ref="#PWR?"  Part="1"
 AR Path="/5C1147CA/60D34AD1" Ref="#PWR?"  Part="1" 
 AR Path="/60D34AD1" Ref="#PWR?"  Part="1" 
 AR Path="/5C4CE703/60D34AD1" Ref="#PWR?"  Part="1" 
+AR Path="/60DAA393/60D34AD1" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 2100 3100 50  0001 C CNN
 F 1 "+3V3" H 2115 3423 50  0000 C CNN
 F 2 "" H 2100 3250 50  0001 C CNN
@@ -55,6 +56,7 @@ AR Path="/5CEAC2F1/60D397E5" Ref="#PWR?"  Part="1"
 AR Path="/5C3C60AE/60D397E5" Ref="#PWR?"  Part="1" 
 AR Path="/60D397E5" Ref="#PWR?"  Part="1" 
 AR Path="/5C4CE703/60D397E5" Ref="#PWR?"  Part="1" 
+AR Path="/60DAA393/60D397E5" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1650 4000 50  0001 C CNN
 F 1 "+5V" H 1665 4323 50  0000 C CNN
 F 2 "" H 1650 4150 50  0001 C CNN
