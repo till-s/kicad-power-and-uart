@@ -25,79 +25,10 @@ Wire Wire Line
 	2150 3600 1800 3600
 Wire Wire Line
 	1800 3700 2150 3700
-$Comp
-L power-test-module-rescue:+5V #PWR?
-U 1 1 5C4DEBF0
-P 7050 4350
-AR Path="/5C1147CA/5C4DEBF0" Ref="#PWR?"  Part="1" 
-AR Path="/5CEAC2F1/5C4DEBF0" Ref="#PWR?"  Part="1" 
-AR Path="/5C3C60AE/5C4DEBF0" Ref="#PWR?"  Part="1" 
-AR Path="/5C4DEBF0" Ref="#PWR?"  Part="1" 
-AR Path="/5C4CE703/5C4DEBF0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7050 4200 50  0001 C CNN
-F 1 "+5V" H 7065 4523 50  0000 C CNN
-F 2 "" H 7050 4350 50  0001 C CNN
-F 3 "" H 7050 4350 50  0001 C CNN
-	1    7050 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5C4DEBF6
-P 7050 4350
-AR Path="/5C3C60AE/5C4DEBF6" Ref="#FLG?"  Part="1" 
-AR Path="/5C4DEBF6" Ref="#FLG?"  Part="1" 
-AR Path="/5C4CE703/5C4DEBF6" Ref="#FLG?"  Part="1" 
-F 0 "#FLG?" H 7050 4425 50  0001 C CNN
-F 1 "PWR_FLAG" H 7050 4524 50  0000 C CNN
-F 2 "" H 7050 4350 50  0001 C CNN
-F 3 "~" H 7050 4350 50  0001 C CNN
-	1    7050 4350
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C4DEBFC
-P 7050 4850
-AR Path="/5C3C60AE/5C4DEBFC" Ref="#PWR?"  Part="1" 
-AR Path="/5C4DEBFC" Ref="#PWR?"  Part="1" 
-AR Path="/5C4CE703/5C4DEBFC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7050 4600 50  0001 C CNN
-F 1 "GND" H 7055 4677 50  0000 C CNN
-F 2 "" H 7050 4850 50  0001 C CNN
-F 3 "" H 7050 4850 50  0001 C CNN
-	1    7050 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5C4DEC02
-P 7050 4850
-AR Path="/5C3C60AE/5C4DEC02" Ref="#FLG?"  Part="1" 
-AR Path="/5C4DEC02" Ref="#FLG?"  Part="1" 
-AR Path="/5C4CE703/5C4DEC02" Ref="#FLG?"  Part="1" 
-F 0 "#FLG?" H 7050 4925 50  0001 C CNN
-F 1 "PWR_FLAG" H 7050 5024 50  0000 C CNN
-F 2 "" H 7050 4850 50  0001 C CNN
-F 3 "~" H 7050 4850 50  0001 C CNN
-	1    7050 4850
-	1    0    0    -1  
-$EndComp
 Text Notes 1800 3600 0    25   ~ 0
 TXD -> Output
 Text Notes 1800 3700 0    25   ~ 0
 RXD <- Input
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J1001
-U 1 1 60D32371
-P 2350 3600
-F 0 "J1001" H 2400 4017 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 3150 3600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2350 3600 50  0001 C CNN
-F 3 "~" H 2350 3600 50  0001 C CNN
-	1    2350 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L power-test-module-rescue:+3V3 #PWR?
 U 1 1 60D34AD1
@@ -114,57 +45,7 @@ F 3 "" H 2100 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2100 3250 2100 3400
-Wire Wire Line
 	2100 3500 2150 3500
-Wire Wire Line
-	2150 3400 2100 3400
-Connection ~ 2100 3400
-Wire Wire Line
-	2100 3400 2100 3500
-$Comp
-L power:GND #PWR?
-U 1 1 60D37922
-P 2700 4000
-AR Path="/5C3C60AE/60D37922" Ref="#PWR?"  Part="1" 
-AR Path="/60D37922" Ref="#PWR?"  Part="1" 
-AR Path="/5C4CE703/60D37922" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2700 3750 50  0001 C CNN
-F 1 "GND" H 2705 3827 50  0000 C CNN
-F 2 "" H 2700 4000 50  0001 C CNN
-F 3 "" H 2700 4000 50  0001 C CNN
-	1    2700 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 3400 2700 3400
-Wire Wire Line
-	2700 3400 2700 3500
-Wire Wire Line
-	2650 3900 2700 3900
-Connection ~ 2700 3900
-Wire Wire Line
-	2700 3900 2700 4000
-Wire Wire Line
-	2650 3800 2700 3800
-Connection ~ 2700 3800
-Wire Wire Line
-	2700 3800 2700 3900
-Wire Wire Line
-	2650 3700 2700 3700
-Connection ~ 2700 3700
-Wire Wire Line
-	2700 3700 2700 3800
-Wire Wire Line
-	2650 3600 2700 3600
-Connection ~ 2700 3600
-Wire Wire Line
-	2700 3600 2700 3700
-Wire Wire Line
-	2650 3500 2700 3500
-Connection ~ 2700 3500
-Wire Wire Line
-	2700 3500 2700 3600
 $Comp
 L power-test-module-rescue:+5V #PWR?
 U 1 1 60D397E5
@@ -184,47 +65,11 @@ $EndComp
 Wire Wire Line
 	2150 3800 2100 3800
 Wire Wire Line
-	2100 3800 2100 3900
-Wire Wire Line
 	2100 4150 1650 4150
-Wire Wire Line
-	2100 3900 2150 3900
-Connection ~ 2100 3900
-Wire Wire Line
-	2100 3900 2100 4150
 Wire Wire Line
 	3700 1900 4100 1900
 Wire Wire Line
 	5450 1900 5750 1900
-$Comp
-L power-test-module-rescue:+3V3 #PWR?
-U 1 1 60DA6E5B
-P 6400 4350
-AR Path="/5BE73D36/60DA6E5B" Ref="#PWR?"  Part="1" 
-AR Path="/5C1147CA/60DA6E5B" Ref="#PWR?"  Part="1" 
-AR Path="/60DA6E5B" Ref="#PWR?"  Part="1" 
-AR Path="/5C4CE703/60DA6E5B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6400 4200 50  0001 C CNN
-F 1 "+3V3" H 6415 4523 50  0000 C CNN
-F 2 "" H 6400 4350 50  0001 C CNN
-F 3 "" H 6400 4350 50  0001 C CNN
-	1    6400 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 60DA70DA
-P 6400 4350
-AR Path="/5C3C60AE/60DA70DA" Ref="#FLG?"  Part="1" 
-AR Path="/60DA70DA" Ref="#FLG?"  Part="1" 
-AR Path="/5C4CE703/60DA70DA" Ref="#FLG?"  Part="1" 
-F 0 "#FLG?" H 6400 4425 50  0001 C CNN
-F 1 "PWR_FLAG" H 6400 4524 50  0000 C CNN
-F 2 "" H 6400 4350 50  0001 C CNN
-F 3 "~" H 6400 4350 50  0001 C CNN
-	1    6400 4350
-	1    0    0    1   
-$EndComp
 Text Label 5750 1900 0    50   ~ 0
 UART_TX_OUT
 Text Label 1800 3600 2    50   ~ 0
@@ -232,5 +77,17 @@ UART_TX_OUT
 Text Label 3700 1900 2    50   ~ 0
 UART_RX_IN
 Text Label 1800 3700 2    50   ~ 0
+UART_RX_IN
+Wire Wire Line
+	2100 3800 2100 4150
+Wire Wire Line
+	2100 3250 2100 3500
+Text HLabel 2150 3500 2    50   Output ~ 0
+3V3_OUT
+Text HLabel 2150 3800 2    50   Output ~ 0
+5V_OUT
+Text HLabel 2150 3600 2    50   Output ~ 0
+UART_TX_OUT
+Text HLabel 2150 3700 2    50   Input ~ 0
 UART_RX_IN
 $EndSCHEMATC
