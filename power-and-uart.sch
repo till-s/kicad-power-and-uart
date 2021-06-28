@@ -76,7 +76,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 6800 4300 7300
 $Comp
-L power:+3V3 #PWR?
+L power-test-module-rescue:+3V3 #PWR?
 U 1 1 5C383ABB
 P 5300 5800
 AR Path="/5BE73D36/5C383ABB" Ref="#PWR?"  Part="1" 
@@ -91,7 +91,7 @@ F 3 "" H 5300 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C383AC1
 P 5500 5800
 F 0 "#PWR?" H 5500 5650 50  0001 C CNN
@@ -240,7 +240,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 6500 3150 6500
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C383B30
 P 2750 6200
 F 0 "#PWR?" H 2750 6050 50  0001 C CNN
@@ -271,7 +271,7 @@ Wire Wire Line
 Wire Wire Line
 	3300 6200 4300 6200
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C383B43
 P 3900 5950
 F 0 "#PWR?" H 3900 5800 50  0001 C CNN
@@ -337,23 +337,6 @@ Wire Wire Line
 Connection ~ 3000 5950
 Wire Wire Line
 	3000 5950 3050 5950
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5C3CF027
-P 8100 1000
-AR Path="/5C3C60AE/5C3CF027" Ref="#FLG?"  Part="1" 
-AR Path="/5C3CF027" Ref="#FLG?"  Part="1" 
-AR Path="/5C4CE703/5C3CF027" Ref="#FLG?"  Part="1" 
-F 0 "#FLG?" H 8100 1075 50  0001 C CNN
-F 1 "PWR_FLAG" H 8100 1174 50  0000 C CNN
-F 2 "" H 8100 1000 50  0001 C CNN
-F 3 "~" H 8100 1000 50  0001 C CNN
-	1    8100 1000
-	1    0    0    1   
-$EndComp
-Connection ~ 8100 1000
-Wire Wire Line
-	8100 1000 8300 1000
 $Comp
 L Device:L_Core_Ferrite L?
 U 1 1 5C3CF03A
@@ -588,7 +571,7 @@ Wire Wire Line
 	7100 1000 6950 1000
 Connection ~ 7200 1000
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C3CF0BE
 P 5050 1950
 AR Path="/5C1147CA/5C3CF0BE" Ref="#PWR?"  Part="1" 
@@ -715,7 +698,7 @@ F 3 "~" H 4100 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C3CF10A
 P 4700 3750
 AR Path="/5C1147CA/5C3CF10A" Ref="#PWR?"  Part="1" 
@@ -739,7 +722,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3200 4150 3200
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C3CF114
 P 4150 3200
 AR Path="/5C1147CA/5C3CF114" Ref="#PWR?"  Part="1" 
@@ -934,7 +917,7 @@ F 3 "" H 6100 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C3CF17B
 P 6850 3200
 AR Path="/5C1147CA/5C3CF17B" Ref="#PWR?"  Part="1" 
@@ -1203,7 +1186,7 @@ Wire Wire Line
 Connection ~ 5350 4200
 Connection ~ 5550 3650
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C42AC0F
 P 5350 3600
 AR Path="/5C1147CA/5C42AC0F" Ref="#PWR?"  Part="1" 
@@ -1327,7 +1310,7 @@ Connection ~ 5800 4200
 Wire Wire Line
 	5800 4200 5800 4600
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C4ED32E
 P 4650 5100
 AR Path="/5C1147CA/5C4ED32E" Ref="#PWR?"  Part="1" 
@@ -1348,19 +1331,6 @@ Wire Wire Line
 	6200 6200 6550 6200
 Text Notes 6400 5200 0    50   ~ 0
 Upgrades:\n- use LVC1G10 (3 input nand) and evaluate\n  LEG# with additional input/jumper\n- add USB mux option (e.g. TS3USB221)
-$Comp
-L trigbox:VIN_3V3 #PWR?
-U 1 1 60D3740A
-P 8300 1000
-F 0 "#PWR?" H 8300 850 50  0001 C CNN
-F 1 "VIN_3V3" H 8315 1173 50  0000 C CNN
-F 2 "" H 8300 1000 50  0001 C CNN
-F 3 "" H 8300 1000 50  0001 C CNN
-	1    8300 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 1000 8100 1000
 Wire Wire Line
 	5700 2150 5700 2700
 Connection ~ 5700 2050
@@ -1419,4 +1389,21 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 21
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2700 2700
+$Comp
+L power-test-module-rescue:+3V3 #PWR?
+U 1 1 60DA0D30
+P 8300 1000
+AR Path="/5BE73D36/60DA0D30" Ref="#PWR?"  Part="1" 
+AR Path="/5C1147CA/60DA0D30" Ref="#PWR?"  Part="1" 
+AR Path="/60DA0D30" Ref="#PWR?"  Part="1" 
+AR Path="/5C4CE703/60DA0D30" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8300 850 50  0001 C CNN
+F 1 "+3V3" H 8315 1173 50  0000 C CNN
+F 2 "" H 8300 1000 50  0001 C CNN
+F 3 "" H 8300 1000 50  0001 C CNN
+	1    8300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1000 8300 1000
 $EndSCHEMATC

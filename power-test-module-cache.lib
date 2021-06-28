@@ -449,34 +449,33 @@ X 1.5A# 9 550 -150 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# power_+3V3
+# power-test-module-rescue_+3V3
 #
-DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+DEF power-test-module-rescue_+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3V3" 0 140 50 H V C CNN
+F1 "power-test-module-rescue_+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
+X +3V3_PWR_OUT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_+5V
+# power-test-module-rescue_+5V
 #
-DEF power_+5V #PWR 0 0 Y Y 1 F P
+DEF power-test-module-rescue_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
+F1 "power-test-module-rescue_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
+X +5V_PWR_OUT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -605,21 +604,6 @@ X EN 6 -50 -550 100 U 50 50 1 1 I
 X PGOOD 7 50 -550 100 U 50 50 1 1 C
 X NC 8 150 -550 100 U 50 50 1 1 N
 X SS 9 550 -150 100 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# trigbox_VIN_3V3
-#
-DEF trigbox_VIN_3V3 #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "trigbox_VIN_3V3" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X VIN_3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

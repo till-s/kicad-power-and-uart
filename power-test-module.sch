@@ -26,7 +26,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 3700 2150 3700
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 5C4DEBF0
 P 7050 4350
 AR Path="/5C1147CA/5C4DEBF0" Ref="#PWR?"  Part="1" 
@@ -83,23 +83,6 @@ F 3 "~" H 7050 4850 50  0001 C CNN
 	1    7050 4850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C4DEC14
-P 5350 4750
-AR Path="/5BE73D36/5C4DEC14" Ref="#PWR?"  Part="1" 
-AR Path="/5C1147CA/5C4DEC14" Ref="#PWR?"  Part="1" 
-AR Path="/5C4DEC14" Ref="#PWR?"  Part="1" 
-AR Path="/5C4CE703/5C4DEC14" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5350 4600 50  0001 C CNN
-F 1 "+3V3" H 5365 4923 50  0000 C CNN
-F 2 "" H 5350 4750 50  0001 C CNN
-F 3 "" H 5350 4750 50  0001 C CNN
-	1    5350 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 4750 4950 4750
 Text Notes 1800 3600 0    25   ~ 0
 TXD -> Output
 Text Notes 1800 3700 0    25   ~ 0
@@ -108,17 +91,6 @@ Text GLabel 1800 3600 0    50   Input ~ 0
 UART_RX_MIO14
 Text GLabel 1800 3700 0    50   Output ~ 0
 UART_TX_MIO15
-$Comp
-L trigbox:VIN_3V3 #PWR?
-U 1 1 60D303FF
-P 4950 4750
-F 0 "#PWR?" H 4950 4600 50  0001 C CNN
-F 1 "VIN_3V3" H 4965 4923 50  0000 C CNN
-F 2 "" H 4950 4750 50  0001 C CNN
-F 3 "" H 4950 4750 50  0001 C CNN
-	1    4950 4750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J1001
 U 1 1 60D32371
@@ -131,7 +103,7 @@ F 3 "~" H 2350 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power-test-module-rescue:+3V3 #PWR?
 U 1 1 60D34AD1
 P 2100 3250
 AR Path="/5BE73D36/60D34AD1" Ref="#PWR?"  Part="1" 
@@ -198,7 +170,7 @@ Connection ~ 2700 3500
 Wire Wire Line
 	2700 3500 2700 3600
 $Comp
-L power:+5V #PWR?
+L power-test-module-rescue:+5V #PWR?
 U 1 1 60D397E5
 P 1650 4150
 AR Path="/5C1147CA/60D397E5" Ref="#PWR?"  Part="1" 
@@ -232,4 +204,33 @@ Wire Wire Line
 	3700 1900 4100 1900
 Wire Wire Line
 	5450 1900 5750 1900
+$Comp
+L power-test-module-rescue:+3V3 #PWR?
+U 1 1 60DA6E5B
+P 6400 4350
+AR Path="/5BE73D36/60DA6E5B" Ref="#PWR?"  Part="1" 
+AR Path="/5C1147CA/60DA6E5B" Ref="#PWR?"  Part="1" 
+AR Path="/60DA6E5B" Ref="#PWR?"  Part="1" 
+AR Path="/5C4CE703/60DA6E5B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6400 4200 50  0001 C CNN
+F 1 "+3V3" H 6415 4523 50  0000 C CNN
+F 2 "" H 6400 4350 50  0001 C CNN
+F 3 "" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60DA70DA
+P 6400 4350
+AR Path="/5C3C60AE/60DA70DA" Ref="#FLG?"  Part="1" 
+AR Path="/60DA70DA" Ref="#FLG?"  Part="1" 
+AR Path="/5C4CE703/60DA70DA" Ref="#FLG?"  Part="1" 
+F 0 "#FLG?" H 6400 4425 50  0001 C CNN
+F 1 "PWR_FLAG" H 6400 4524 50  0000 C CNN
+F 2 "" H 6400 4350 50  0001 C CNN
+F 3 "~" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
