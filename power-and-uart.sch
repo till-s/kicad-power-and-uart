@@ -135,7 +135,7 @@ F 1 "EMI_Filter_LL_14" H 1600 7050 50  0000 C CNN
 F 2 "proj_footprints:WE_CNSW" V 1600 7540 50  0001 C CNN
 F 3 "https://www.digikey.com/catalog/en/partgroup/we-cnsw-we-cnsw-hf/22783?mpart=744231371&vendor=732" H 1600 7687 50  0001 C CNN
 	1    1600 7500
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4100 7500 4300 7500
@@ -619,21 +619,6 @@ F 3 "" H 6100 2650 50  0001 C CNN
 	1    6100 2650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:USB_C_Receptacle J?
-U 1 1 5C3CF0CC
-P 2100 2500
-AR Path="/5C3CF0CC" Ref="J?"  Part="1" 
-AR Path="/5CEAC2F1/5C3CF0CC" Ref="J?"  Part="1" 
-AR Path="/5C3C60AE/5C3CF0CC" Ref="J?"  Part="1" 
-AR Path="/5C4CE703/5C3CF0CC" Ref="J1003"  Part="1" 
-F 0 "J1003" H 2205 3767 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 2205 3676 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles" H 2250 2500 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 2500 50  0001 C CNN
-	1    2100 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2700 1500 4050 1500
 Wire Wire Line
@@ -643,41 +628,32 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5C3CF0D6
-P 2100 4100
+P 2100 3000
 AR Path="/5C3C60AE/5C3CF0D6" Ref="#PWR?"  Part="1" 
 AR Path="/5C3CF0D6" Ref="#PWR?"  Part="1" 
 AR Path="/5C4CE703/5C3CF0D6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2100 3850 50  0001 C CNN
-F 1 "GND" H 2105 3927 50  0000 C CNN
-F 2 "" H 2100 4100 50  0001 C CNN
-F 3 "" H 2100 4100 50  0001 C CNN
-	1    2100 4100
+F 0 "#PWR?" H 2100 2750 50  0001 C CNN
+F 1 "GND" H 2105 2827 50  0000 C CNN
+F 2 "" H 2100 3000 50  0001 C CNN
+F 3 "" H 2100 3000 50  0001 C CNN
+	1    2100 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C3CF0DC
-P 1800 4100
+P 1800 3000
 AR Path="/5C3C60AE/5C3CF0DC" Ref="#PWR?"  Part="1" 
 AR Path="/5C3CF0DC" Ref="#PWR?"  Part="1" 
 AR Path="/5C4CE703/5C3CF0DC" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1800 3850 50  0001 C CNN
-F 1 "GND" H 1805 3927 50  0000 C CNN
-F 2 "" H 1800 4100 50  0001 C CNN
-F 3 "" H 1800 4100 50  0001 C CNN
-	1    1800 4100
+F 0 "#PWR?" H 1800 2750 50  0001 C CNN
+F 1 "GND" H 1805 2827 50  0000 C CNN
+F 2 "" H 1800 3000 50  0001 C CNN
+F 3 "" H 1800 3000 50  0001 C CNN
+	1    1800 3000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2700 2500
 NoConn ~ 2700 2600
-NoConn ~ 2700 2800
-NoConn ~ 2700 2900
-NoConn ~ 2700 3100
-NoConn ~ 2700 3200
-NoConn ~ 2700 3400
-NoConn ~ 2700 3500
-NoConn ~ 2700 3700
-NoConn ~ 2700 3800
 Wire Wire Line
 	2700 2000 2700 2050
 $Comp
@@ -1431,4 +1407,16 @@ Text HLabel 6550 6100 2    50   Output ~ 0
 UART_TX_OUT
 Text HLabel 6550 6200 2    50   Input ~ 0
 UART_RX_IN
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1003
+U 1 1 60DACEAD
+P 2100 2100
+F 0 "J1003" H 2207 2967 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 2207 2876 50  0000 C CNN
+F 2 "proj_footprints:USB_C_Receptacle_GCT_USB4085_smaller_holes" H 2250 2100 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 2100 50  0001 C CNN
+	1    2100 2100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2700 2700
 $EndSCHEMATC
