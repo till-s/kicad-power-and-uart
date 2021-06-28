@@ -87,10 +87,6 @@ Text Notes 1800 3600 0    25   ~ 0
 TXD -> Output
 Text Notes 1800 3700 0    25   ~ 0
 RXD <- Input
-Text GLabel 1800 3600 0    50   Input ~ 0
-UART_RX_MIO14
-Text GLabel 1800 3700 0    50   Output ~ 0
-UART_TX_MIO15
 $Comp
 L Connector_Generic:Conn_02x06_Odd_Even J1001
 U 1 1 60D32371
@@ -196,10 +192,6 @@ Wire Wire Line
 Connection ~ 2100 3900
 Wire Wire Line
 	2100 3900 2100 4150
-Text GLabel 5750 1900 2    50   Output ~ 0
-UART_RX_MIO14
-Text GLabel 3700 1900 0    50   Input ~ 0
-UART_TX_MIO15
 Wire Wire Line
 	3700 1900 4100 1900
 Wire Wire Line
@@ -233,4 +225,12 @@ F 3 "~" H 6400 4350 50  0001 C CNN
 	1    6400 4350
 	1    0    0    1   
 $EndComp
+Text Label 5750 1900 0    50   ~ 0
+UART_TX_OUT
+Text Label 1800 3600 2    50   ~ 0
+UART_TX_OUT
+Text Label 3700 1900 2    50   ~ 0
+UART_RX_IN
+Text Label 1800 3700 2    50   ~ 0
+UART_RX_IN
 $EndSCHEMATC
