@@ -110,6 +110,8 @@ F 0 "J1101" H 1055 6867 50  0000 C CNN
 F 1 "USB_miniB" H 1000 6800 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1150 6350 50  0001 C CNN
 F 3 " ~" H 1150 6350 50  0001 C CNN
+F 4 "Molex" H 1000 6400 50  0001 C CNN "Manufacturer"
+F 5 "473460001" H 1000 6400 50  0001 C CNN "Part"
 	1    1000 6400
 	1    0    0    -1  
 $EndComp
@@ -135,6 +137,8 @@ F 0 "FL1101" H 1550 7250 50  0000 C CNN
 F 1 "EMI_Filter_LL_14" H 1600 7050 50  0000 C CNN
 F 2 "proj_footprints:WE_CNSW" V 1600 7540 50  0001 C CNN
 F 3 "https://www.digikey.com/catalog/en/partgroup/we-cnsw-we-cnsw-hf/22783?mpart=744231371&vendor=732" H 1600 7687 50  0001 C CNN
+F 4 "744231371" H 1600 7500 50  0001 C CNN "Part"
+F 5 "Wurth" H 1600 7500 50  0001 C CNN "Manufacturer"
 	1    1600 7500
 	1    0    0    1   
 $EndComp
@@ -207,6 +211,8 @@ F 0 "FL1102" H 1800 6200 50  0000 C CNN
 F 1 "EMI_Filter_LL_14" H 1850 6000 50  0000 C CNN
 F 2 "proj_footprints:WE_CNSW" V 1850 6490 50  0001 C CNN
 F 3 "https://www.digikey.com/catalog/en/partgroup/we-cnsw-we-cnsw-hf/22783?mpart=744231371&vendor=732" H 1850 6637 50  0001 C CNN
+F 4 "744231371" H 1850 6450 50  0001 C CNN "Part"
+F 5 "Wurth" H 1850 6450 50  0001 C CNN "Manufacturer"
 	1    1850 6450
 	1    0    0    -1  
 $EndComp
@@ -350,8 +356,8 @@ F 0 "L1101" V 6622 1000 50  0000 C CNN
 F 1 "1uH" V 6713 1000 50  0000 C CNN
 F 2 "proj_footprints:L_CDMC6D28" H 6800 1000 50  0001 C CNN
 F 3 "~" H 6800 1000 50  0001 C CNN
-F 4 "TOKO" V 6800 1000 50  0001 C CNN "Manufacturer"
-F 5 "FDV0530S-1R0" V 6800 1000 50  0001 C CNN "Model"
+F 4 "Sumida" V 6800 1000 50  0001 C CNN "Manufacturer"
+F 5 "CDMC6D28NP-1R0MC " V 6800 1000 50  0001 C CNN "Part"
 	1    6800 1000
 	0    1    1    0   
 $EndComp
@@ -1137,7 +1143,7 @@ F 1 "LED" H 4991 4675 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5000 4550 50  0001 C CNN
 F 3 "~" H 5000 4550 50  0001 C CNN
 F 4 "Wurth" H 5000 4550 50  0001 C CNN "Manufacturer"
-F 5 " 150060GS75000 " H 5000 4550 50  0001 C CNN "Part"
+F 5 "150060GS75000" H 5000 4550 50  0001 C CNN "Part"
 	1    5000 4550
 	0    -1   -1   0   
 $EndComp
@@ -1154,7 +1160,7 @@ F 1 "LED" H 5341 4675 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5350 4550 50  0001 C CNN
 F 3 "~" H 5350 4550 50  0001 C CNN
 F 4 "Wurth" H 5350 4550 50  0001 C CNN "Manufacturer"
-F 5 " 150060GS75000 " H 5350 4550 50  0001 C CNN "Part"
+F 5 "150060GS75000" H 5350 4550 50  0001 C CNN "Part"
 	1    5350 4550
 	0    -1   -1   0   
 $EndComp
@@ -1424,6 +1430,8 @@ F 0 "J1102" H 2207 2967 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 2207 2876 50  0000 C CNN
 F 2 "proj_footprints:USB_C_Receptacle_GCT_USB4085_smaller_holes" H 2250 2100 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2250 2100 50  0001 C CNN
+F 4 "GCT" H 2100 2100 50  0001 C CNN "Manufacturer"
+F 5 "USB4085" H 2100 2100 50  0001 C CNN "Part"
 	1    2100 2100
 	1    0    0    -1  
 $EndComp
@@ -1460,7 +1468,7 @@ F 1 "LED" H 6491 3625 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 6500 3500 50  0001 C CNN
 F 3 "~" H 6500 3500 50  0001 C CNN
 F 4 "Wurth" H 6500 3500 50  0001 C CNN "Manufacturer"
-F 5 " 150060RS75000 " H 6500 3500 50  0001 C CNN "Part"
+F 5 "150060RS75000" H 6500 3500 50  0001 C CNN "Part"
 	1    6500 3500
 	1    0    0    -1  
 $EndComp
