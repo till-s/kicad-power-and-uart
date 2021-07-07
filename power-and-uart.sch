@@ -134,6 +134,8 @@ F 0 "FL1001" H 1550 7250 50  0000 C CNN
 F 1 "EMI_Filter_LL_14" H 1600 7050 50  0000 C CNN
 F 2 "proj_footprints:WE_CNSW" V 1600 7540 50  0001 C CNN
 F 3 "https://www.digikey.com/catalog/en/partgroup/we-cnsw-we-cnsw-hf/22783?mpart=744231371&vendor=732" H 1600 7687 50  0001 C CNN
+F 4 "744231371" H 1600 7500 50  0001 C CNN "Part"
+F 5 "Wurth" H 1600 7500 50  0001 C CNN "Manufacturer"
 	1    1600 7500
 	1    0    0    1   
 $EndComp
@@ -154,11 +156,11 @@ Connection ~ 4300 7500
 Wire Wire Line
 	4300 7500 4600 7500
 $Comp
-L trigbox:R4k7 R1010
+L Device:R_Small R1010
 U 1 1 5C383AEE
 P 4300 6700
 F 0 "R1010" H 4359 6730 50  0000 L CNN
-F 1 "R4k7" H 4359 6654 30  0000 L CNN
+F 1 "5k1" H 4359 6654 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 6700 50  0001 C CNN
 F 3 "~" H 4300 6700 50  0001 C CNN
 	1    4300 6700
@@ -206,6 +208,8 @@ F 0 "FL1002" H 1800 6200 50  0000 C CNN
 F 1 "EMI_Filter_LL_14" H 1850 6000 50  0000 C CNN
 F 2 "proj_footprints:WE_CNSW" V 1850 6490 50  0001 C CNN
 F 3 "https://www.digikey.com/catalog/en/partgroup/we-cnsw-we-cnsw-hf/22783?mpart=744231371&vendor=732" H 1850 6637 50  0001 C CNN
+F 4 "744231371" H 1850 6450 50  0001 C CNN "Part"
+F 5 "Wurth" H 1850 6450 50  0001 C CNN "Manufacturer"
 	1    1850 6450
 	1    0    0    -1  
 $EndComp
@@ -965,6 +969,8 @@ F 0 "D1003" H 6491 3716 50  0000 C CNN
 F 1 "LED" H 6491 3625 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 6500 3500 50  0001 C CNN
 F 3 "~" H 6500 3500 50  0001 C CNN
+F 4 "150060RS75000" H 6500 3500 50  0001 C CNN "Part"
+F 5 "Wurth" H 6500 3500 50  0001 C CNN "Manufacturer"
 	1    6500 3500
 	1    0    0    -1  
 $EndComp
@@ -1108,6 +1114,8 @@ F 0 "D1001" H 4991 4766 50  0000 C CNN
 F 1 "LED" H 4991 4675 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5000 4550 50  0001 C CNN
 F 3 "~" H 5000 4550 50  0001 C CNN
+F 4 "150060GS75000" H 5000 4550 50  0001 C CNN "Part"
+F 5 "Wurth" H 5000 4550 50  0001 C CNN "Manufacturer"
 	1    5000 4550
 	0    -1   -1   0   
 $EndComp
@@ -1122,6 +1130,8 @@ F 0 "D1002" H 5341 4766 50  0000 C CNN
 F 1 "LED" H 5341 4675 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5350 4550 50  0001 C CNN
 F 3 "~" H 5350 4550 50  0001 C CNN
+F 4 "150060GS75000" H 5350 4550 50  0001 C CNN "Part"
+F 5 "Wurth" H 5350 4550 50  0001 C CNN "Manufacturer"
 	1    5350 4550
 	0    -1   -1   0   
 $EndComp
