@@ -28,7 +28,7 @@ MinViaDrill=0.254
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.5
-TrackWidth1=0.2032
+TrackWidth1=0.1524
 TrackWidth2=0.2032
 TrackWidth3=0.2794
 TrackWidth4=0.3048
@@ -236,7 +236,7 @@ Enabled=0
 [pcbnew/Netclasses/Default]
 Name=Default
 Clearance=0.1524
-TrackWidth=0.2032
+TrackWidth=0.1524
 ViaDiameter=0.508
 ViaDrill=0.254
 uViaDiameter=0.3
@@ -245,7 +245,7 @@ dPairWidth=0.2794
 dPairGap=0.1778
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=diffp
+Name=diffp_usb
 Clearance=0.1778
 TrackWidth=0.2794
 ViaDiameter=0.508
