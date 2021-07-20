@@ -92,4 +92,122 @@ Text HLabel 2150 3600 2    50   Output ~ 0
 UART_TX_OUT
 Text HLabel 2150 3700 2    50   Input ~ 0
 UART_RX_IN
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J2
+U 1 1 60F7B4D1
+P 4300 3600
+F 0 "J2" H 4350 4017 50  0000 C CNN
+F 1 "Pwr_fallback" H 4350 3926 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 4300 3600 50  0001 C CNN
+F 3 "~" H 4300 3600 50  0001 C CNN
+	1    4300 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3400 3900 3400
+Wire Wire Line
+	3900 3400 3900 3500
+$Comp
+L power:GND #PWR?
+U 1 1 60F8352E
+P 3900 4000
+AR Path="/5C3C60AE/60F8352E" Ref="#PWR?"  Part="1" 
+AR Path="/60F8352E" Ref="#PWR?"  Part="1" 
+AR Path="/5C4CE703/60F8352E" Ref="#PWR?"  Part="1" 
+AR Path="/60DAA393/5C4CE703/60F8352E" Ref="#PWR?"  Part="1" 
+AR Path="/60DAA393/60F8352E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3900 3750 50  0001 C CNN
+F 1 "GND" H 3905 3827 50  0000 C CNN
+F 2 "" H 3900 4000 50  0001 C CNN
+F 3 "" H 3900 4000 50  0001 C CNN
+	1    3900 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3500 3900 3500
+Connection ~ 3900 3500
+Wire Wire Line
+	3900 3500 3900 3600
+Wire Wire Line
+	4000 3600 3900 3600
+Connection ~ 3900 3600
+Wire Wire Line
+	3900 3600 3900 3700
+Wire Wire Line
+	4000 3700 3900 3700
+Connection ~ 3900 3700
+Wire Wire Line
+	3900 3700 3900 3800
+Wire Wire Line
+	4000 3800 3900 3800
+Connection ~ 3900 3800
+Wire Wire Line
+	3900 3800 3900 3900
+Wire Wire Line
+	4000 3900 3900 3900
+Connection ~ 3900 3900
+Wire Wire Line
+	3900 3900 3900 4000
+$Comp
+L power-test-module-rescue:+3V3 #PWR?
+U 1 1 60F83DCE
+P 4650 3300
+AR Path="/5BE73D36/60F83DCE" Ref="#PWR?"  Part="1" 
+AR Path="/5C1147CA/60F83DCE" Ref="#PWR?"  Part="1" 
+AR Path="/60F83DCE" Ref="#PWR?"  Part="1" 
+AR Path="/5C4CE703/60F83DCE" Ref="#PWR?"  Part="1" 
+AR Path="/60DAA393/60F83DCE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4650 3150 50  0001 C CNN
+F 1 "+3V3" H 4665 3473 50  0000 C CNN
+F 2 "" H 4650 3300 50  0001 C CNN
+F 3 "" H 4650 3300 50  0001 C CNN
+	1    4650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3300 4650 3400
+Wire Wire Line
+	4650 3500 4500 3500
+Wire Wire Line
+	4500 3400 4650 3400
+Connection ~ 4650 3400
+Wire Wire Line
+	4650 3400 4650 3500
+$Comp
+L power-test-module-rescue:+5V #PWR?
+U 1 1 60F8496B
+P 5450 3300
+AR Path="/5C1147CA/60F8496B" Ref="#PWR?"  Part="1" 
+AR Path="/5CEAC2F1/60F8496B" Ref="#PWR?"  Part="1" 
+AR Path="/5C3C60AE/60F8496B" Ref="#PWR?"  Part="1" 
+AR Path="/60F8496B" Ref="#PWR?"  Part="1" 
+AR Path="/5C4CE703/60F8496B" Ref="#PWR?"  Part="1" 
+AR Path="/60DAA393/60F8496B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 3150 50  0001 C CNN
+F 1 "+5V" H 5465 3473 50  0000 C CNN
+F 2 "" H 5450 3300 50  0001 C CNN
+F 3 "" H 5450 3300 50  0001 C CNN
+	1    5450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3300 5450 3900
+Wire Wire Line
+	5450 3900 4650 3900
+Wire Wire Line
+	4500 3800 4650 3800
+Wire Wire Line
+	4650 3800 4650 3900
+Connection ~ 4650 3900
+Wire Wire Line
+	4650 3900 4500 3900
+Wire Wire Line
+	4500 3600 4800 3600
+Wire Wire Line
+	4500 3700 4800 3700
+Text Label 4800 3600 0    50   ~ 0
+UART_TX_OUT
+Text Label 4800 3700 0    50   ~ 0
+UART_RX_IN
+Connection ~ 3900 3400
 $EndSCHEMATC

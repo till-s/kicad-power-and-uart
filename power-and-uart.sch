@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_USB:FT232RL U1103
-U 1 1 5C383A94
-P 5400 6800
-F 0 "U1103" H 5750 7750 50  0000 C CNN
-F 1 "FT232RL" H 4950 7750 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 5400 6800 50  0001 C CNN
-F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 5400 6800 50  0001 C CNN
-	1    5400 6800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5C383A9B
 P 4750 7800
@@ -35,71 +24,49 @@ F 3 "" H 4750 7800 50  0001 C CNN
 	1    4750 7800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 7500 4600 7800
-Wire Wire Line
-	4600 7800 4750 7800
-Connection ~ 5200 7800
-Wire Wire Line
-	5200 7800 5400 7800
-Connection ~ 5400 7800
-Wire Wire Line
-	5400 7800 5500 7800
-Connection ~ 5500 7800
-Wire Wire Line
-	5500 7800 5600 7800
 Connection ~ 4750 7800
-Wire Wire Line
-	4750 7800 5200 7800
-NoConn ~ 4600 7200
-NoConn ~ 4600 7000
 $Comp
 L fmc:100nF_603 C1101
 U 1 1 5C383AAF
-P 4100 7350
-F 0 "C1101" H 3900 7450 50  0000 L CNN
-F 1 "100nF_603" H 3550 7300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4138 7200 50  0001 C CNN
-F 3 "~" H 4100 7350 50  0001 C CNN
-F 4 "GCJ188R71E104KA12D" H 4225 7550 50  0001 C CNN "Part"
-F 5 "Murata" H 4325 7650 50  0001 C CNN "Manufacturer"
-	1    4100 7350
+P 4550 7550
+F 0 "C1101" V 4450 7650 50  0000 L CNN
+F 1 "100nF_603" H 4600 7450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4588 7400 50  0001 C CNN
+F 3 "~" H 4550 7550 50  0001 C CNN
+F 4 "GCJ188R71E104KA12D" H 4675 7750 50  0001 C CNN "Part"
+F 5 "Murata" H 4775 7850 50  0001 C CNN "Manufacturer"
+	1    4550 7550
 	1    0    0    -1  
 $EndComp
-Connection ~ 4600 7500
-Wire Wire Line
-	4600 6100 4100 6100
-Wire Wire Line
-	4100 6100 4100 7200
 Wire Wire Line
 	4600 6800 4300 6800
 Wire Wire Line
-	4300 6800 4300 7300
+	4300 6800 4300 7450
 $Comp
 L power-test-module-rescue:+3V3 #PWR?
 U 1 1 5C383ABB
-P 5300 5800
+P 5400 5850
 AR Path="/5BE73D36/5C383ABB" Ref="#PWR?"  Part="1" 
 AR Path="/5C1147CA/5C383ABB" Ref="#PWR?"  Part="1" 
 AR Path="/5C383ABB" Ref="#PWR?"  Part="1" 
 AR Path="/5C4CE703/5C383ABB" Ref="#PWR?"  Part="1" 
 AR Path="/60DAA393/5C4CE703/5C383ABB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5300 5650 50  0001 C CNN
-F 1 "+3V3" H 5315 5973 50  0000 C CNN
-F 2 "" H 5300 5800 50  0001 C CNN
-F 3 "" H 5300 5800 50  0001 C CNN
-	1    5300 5800
+F 0 "#PWR?" H 5400 5700 50  0001 C CNN
+F 1 "+3V3" H 5415 6023 50  0000 C CNN
+F 2 "" H 5400 5850 50  0001 C CNN
+F 3 "" H 5400 5850 50  0001 C CNN
+	1    5400 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power-test-module-rescue:+5V #PWR?
 U 1 1 5C383AC1
-P 5500 5800
-F 0 "#PWR?" H 5500 5650 50  0001 C CNN
-F 1 "+5V" H 5515 5973 50  0000 C CNN
-F 2 "" H 5500 5800 50  0001 C CNN
-F 3 "" H 5500 5800 50  0001 C CNN
-	1    5500 5800
+P 5200 5850
+F 0 "#PWR?" H 5200 5700 50  0001 C CNN
+F 1 "+5V" H 5215 6023 50  0000 C CNN
+F 2 "" H 5200 5850 50  0001 C CNN
+F 3 "" H 5200 5850 50  0001 C CNN
+	1    5200 5850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -107,17 +74,15 @@ L Connector:USB_OTG J1101
 U 1 1 5C383AC7
 P 1000 6400
 F 0 "J1101" H 1055 6867 50  0000 C CNN
-F 1 "USB_miniB" H 1000 6800 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1150 6350 50  0001 C CNN
+F 1 "USB_microB" H 1000 6800 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1150 6350 50  0001 C CNN
 F 3 " ~" H 1150 6350 50  0001 C CNN
 F 4 "Molex" H 1000 6400 50  0001 C CNN "Manufacturer"
-F 5 "473460001" H 1000 6400 50  0001 C CNN "Part"
+F 5 "1050170001" H 1000 6400 50  0001 C CNN "Part"
 	1    1000 6400
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1300 6600
-Wire Wire Line
-	4300 6200 4300 6600
 $Comp
 L power:GND #PWR?
 U 1 1 5C383AD0
@@ -142,34 +107,17 @@ F 5 "Wurth" H 1600 7500 50  0001 C CNN "Manufacturer"
 	1    1600 7500
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	4100 7500 4300 7500
 $Comp
 L trigbox:R10k R1111
 U 1 1 5C383AE5
-P 4300 7400
-F 0 "R1111" H 4359 7430 50  0000 L CNN
-F 1 "10k" H 4359 7354 30  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 7400 50  0001 C CNN
-F 3 "~" H 4300 7400 50  0001 C CNN
-	1    4300 7400
-	1    0    0    -1  
+P 4300 7550
+F 0 "R1111" H 4359 7580 50  0000 L CNN
+F 1 "10k" H 4359 7504 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 7550 50  0001 C CNN
+F 3 "~" H 4300 7550 50  0001 C CNN
+	1    4300 7550
+	-1   0    0    -1  
 $EndComp
-Connection ~ 4300 7500
-Wire Wire Line
-	4300 7500 4600 7500
-$Comp
-L Device:R_Small R1110
-U 1 1 5C383AEE
-P 4300 6700
-F 0 "R1110" H 4359 6730 50  0000 L CNN
-F 1 "5k1" H 4359 6654 30  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 6700 50  0001 C CNN
-F 3 "~" H 4300 6700 50  0001 C CNN
-	1    4300 6700
-	1    0    0    -1  
-$EndComp
-Connection ~ 4300 6800
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5C383AF6
@@ -181,17 +129,16 @@ F 3 "~" H 1350 6200 50  0001 C CNN
 	1    1350 6200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6200 6300
-NoConn ~ 6200 6500
-NoConn ~ 6200 7100
-NoConn ~ 6200 7200
-NoConn ~ 6200 7300
-NoConn ~ 6200 7400
-NoConn ~ 6200 7500
-NoConn ~ 6200 6400
-NoConn ~ 6200 6600
-NoConn ~ 6200 6700
-NoConn ~ 6200 6800
+NoConn ~ 6000 6400
+NoConn ~ 6000 6600
+NoConn ~ 6000 7100
+NoConn ~ 6000 7200
+NoConn ~ 6000 7300
+NoConn ~ 6000 7400
+NoConn ~ 6000 6500
+NoConn ~ 6000 6700
+NoConn ~ 6000 6800
+NoConn ~ 6000 6900
 $Comp
 L Interface_USB:USB3740B-AI9 U1101
 U 1 1 5C383B09
@@ -243,8 +190,6 @@ F 3 "" H 2750 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 6400 3150 6400
-Wire Wire Line
 	4600 6500 3150 6500
 $Comp
 L power-test-module-rescue:+5V #PWR?
@@ -275,8 +220,6 @@ F 3 "~" H 3300 5950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 6100 3300 6200
-Wire Wire Line
-	3300 6200 4300 6200
 $Comp
 L power-test-module-rescue:+5V #PWR?
 U 1 1 5C383B43
@@ -1044,7 +987,7 @@ AR Path="/5C3C60AE/5C3CF1BE" Ref="R?"  Part="1"
 AR Path="/5C3CF1BE" Ref="R?"  Part="1" 
 AR Path="/5C4CE703/5C3CF1BE" Ref="R1109"  Part="1" 
 AR Path="/60DAA393/5C4CE703/5C3CF1BE" Ref="R1109"  Part="1" 
-F 0 "R1109" H 4100 5400 50  0000 L CNN
+F 0 "R1109" H 4000 5400 50  0000 L CNN
 F 1 "5k1" H 4100 5300 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 5350 50  0001 C CNN
 F 3 "~" H 4300 5350 50  0001 C CNN
@@ -1074,7 +1017,7 @@ AR Path="/5C3C60AE/5C3CF1CB" Ref="R?"  Part="1"
 AR Path="/5C3CF1CB" Ref="R?"  Part="1" 
 AR Path="/5C4CE703/5C3CF1CB" Ref="R1112"  Part="1" 
 AR Path="/60DAA393/5C4CE703/5C3CF1CB" Ref="R1112"  Part="1" 
-F 0 "R1112" H 4300 5250 50  0000 L CNN
+F 0 "R1112" H 4200 5250 50  0000 L CNN
 F 1 "35k7" H 4250 5150 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 5200 50  0001 C CNN
 F 3 "~" H 4500 5200 50  0001 C CNN
@@ -1177,45 +1120,45 @@ Connection ~ 5350 4800
 Wire Wire Line
 	5350 4800 4000 4800
 $Comp
-L trigbox:R100k R?
+L Device:R_Small R?
 U 1 1 5C417A62
 P 5000 4300
 AR Path="/5C3C60AE/5C417A62" Ref="R?"  Part="1" 
 AR Path="/5C417A62" Ref="R?"  Part="1" 
 AR Path="/5C4CE703/5C417A62" Ref="R1113"  Part="1" 
 AR Path="/60DAA393/5C4CE703/5C417A62" Ref="R1113"  Part="1" 
-F 0 "R1113" H 4800 4350 50  0000 L CNN
-F 1 "1k5" H 4800 4250 30  0000 L CNN
+F 0 "R1113" H 4750 4450 50  0000 L CNN
+F 1 "1k" H 4800 4250 30  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 4300 50  0001 C CNN
 F 3 "~" H 5000 4300 50  0001 C CNN
 	1    5000 4300
 	1    0    0    -1  
 $EndComp
 $Comp
-L trigbox:R100k R?
+L Device:R_Small R?
 U 1 1 5C417B66
 P 5350 4300
 AR Path="/5C3C60AE/5C417B66" Ref="R?"  Part="1" 
 AR Path="/5C417B66" Ref="R?"  Part="1" 
 AR Path="/5C4CE703/5C417B66" Ref="R1114"  Part="1" 
 AR Path="/60DAA393/5C4CE703/5C417B66" Ref="R1114"  Part="1" 
-F 0 "R1114" H 5150 4350 50  0000 L CNN
-F 1 "1k5" H 5150 4250 30  0000 L CNN
+F 0 "R1114" H 5050 4450 50  0000 L CNN
+F 1 "1k" H 5150 4250 30  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5350 4300 50  0001 C CNN
 F 3 "~" H 5350 4300 50  0001 C CNN
 	1    5350 4300
 	1    0    0    -1  
 $EndComp
 $Comp
-L trigbox:R100k R?
+L Device:R_Small R?
 U 1 1 5C417BFB
 P 6850 3400
 AR Path="/5C3C60AE/5C417BFB" Ref="R?"  Part="1" 
 AR Path="/5C417BFB" Ref="R?"  Part="1" 
 AR Path="/5C4CE703/5C417BFB" Ref="R1118"  Part="1" 
 AR Path="/60DAA393/5C4CE703/5C417BFB" Ref="R1118"  Part="1" 
-F 0 "R1118" H 6650 3450 50  0000 L CNN
-F 1 "1k5" H 6650 3350 30  0000 L CNN
+F 0 "R1118" H 6950 3450 50  0000 L CNN
+F 1 "1k" H 6650 3350 30  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6850 3400 50  0001 C CNN
 F 3 "~" H 6850 3400 50  0001 C CNN
 	1    6850 3400
@@ -1372,9 +1315,9 @@ F 3 "" H 4650 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 6100 6550 6100
+	6000 6200 6350 6200
 Wire Wire Line
-	6200 6200 6550 6200
+	6000 6300 6350 6300
 Wire Wire Line
 	5700 2150 5700 2700
 Connection ~ 5700 2050
@@ -1418,9 +1361,9 @@ Text Label 1250 7600 2    50   ~ 0
 USB_C_D_N
 Text Label 2150 5250 0    50   ~ 0
 USB_C_D_N
-Text HLabel 6550 6100 2    50   Output ~ 0
+Text HLabel 6350 6200 2    50   Output ~ 0
 UART_TX_OUT
-Text HLabel 6550 6200 2    50   Input ~ 0
+Text HLabel 6350 6300 2    50   Input ~ 0
 UART_RX_IN
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J1102
@@ -1474,4 +1417,65 @@ F 5 "150060RS75000" H 6500 3500 50  0001 C CNN "Part"
 $EndComp
 Text Notes 6400 5200 0    50   ~ 0
 Upgrades:\n- use LVC1G10 (3 input nand) and evaluate\n  LEG# with additional input/jumper\n- add USB mux option (e.g. TS3USB221)
+$Comp
+L Interface_USB:FT231XS U1103
+U 1 1 60F229DF
+P 5300 6800
+F 0 "U1103" H 5650 7650 50  0000 C CNN
+F 1 "FT231XS" H 4700 7650 50  0000 C CNN
+F 2 "Package_SO:SSOP-20_3.9x8.7mm_P0.635mm" H 6300 6000 50  0001 C CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf" H 5300 6800 50  0001 C CNN
+	1    5300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1110
+U 1 1 5C383AEE
+P 3700 6200
+F 0 "R1110" V 3800 6000 50  0000 L CNN
+F 1 "5k1" V 3800 6300 30  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3700 6200 50  0001 C CNN
+F 3 "~" H 3700 6200 50  0001 C CNN
+	1    3700 6200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 6200 3600 6200
+Wire Wire Line
+	4750 7800 5200 7800
+Wire Wire Line
+	3800 6200 4300 6200
+Wire Wire Line
+	4300 6200 4300 6800
+Connection ~ 4300 6800
+Wire Wire Line
+	4550 6200 4600 6200
+Wire Wire Line
+	4550 6200 4550 7400
+Wire Wire Line
+	4600 6600 3900 6600
+Wire Wire Line
+	3900 6600 3900 6400
+Wire Wire Line
+	3900 6400 3150 6400
+Wire Wire Line
+	4300 7650 4300 7800
+Wire Wire Line
+	4300 7800 4550 7800
+Wire Wire Line
+	4550 7700 4550 7800
+Connection ~ 4550 7800
+Wire Wire Line
+	4550 7800 4750 7800
+Wire Wire Line
+	5200 7700 5200 7800
+Connection ~ 5200 7800
+Wire Wire Line
+	5200 7800 5400 7800
+Wire Wire Line
+	5400 7700 5400 7800
+Wire Wire Line
+	5200 5850 5200 5900
+Wire Wire Line
+	5400 5850 5400 5900
 $EndSCHEMATC
